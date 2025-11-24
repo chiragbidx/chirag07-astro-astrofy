@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Scaling Your Bubble App: Performance Optimizations that Work" sideBarActiveItemID="blog">
+  <article class="max-w-3xl mx-auto py-10 px-4">
+    <header>
+      <img src="/images/blog-bubble-scale.webp" alt="Bubble App Scaling Graph" class="rounded w-full mb-6" />
+      <h1 class="text-4xl font-extrabold mb-3">Scaling Your Bubble App: Performance Optimizations that Work</h1>
+      <div class="flex gap-4 items-center text-gray-500 text-sm mb-6">
+        <span>By Chirag Dodiya</span>
+        <span>•</span>
+        <time datetime="2024-05-10">May 10, 2024</time>
+        <span class="inline-block bg-green-100 text-green-700 px-2 py-0.5 rounded font-medium">Best Practice</span>
+      </div>
+    </header>
+    <section class="prose prose-lg dark:prose-invert max-w-none">
+      <p>
+        As your Bubble app grows, ensuring smooth performance and a great user experience becomes a real challenge. Over the years, I’ve optimized dozens of Bubble products for speed, reliability, and scale—and here’s what actually works.
+      </p>
+      <h2>Common Bottlenecks in Bubble</h2>
+      <ul>
+        <li>Large and inefficient database searches</li>
+        <li>Heavy use of custom states and repeating groups</li>
+        <li>Non-optimized images/assets</li>
+        <li>Unnecessary API workflow runs</li>
+      </ul>
+      <h2>Actionable Optimizations</h2>
+      <ol>
+        <li><strong>Use privacy rules and indexes:</strong> only load the data you need.</li>
+        <li><strong>Paginate repeating groups:</strong> never load more than the user can see.</li>
+        <li><strong>Compress images</strong> before upload and use Bubble’s built-in image processing.</li>
+        <li><strong>Offload long tasks</strong> to backend workflows when possible.</li>
+        <li><strong>Use “only when” conditions</strong> for resource-intensive workflow triggers.</li>
+      </ol>
+      <h2>My Favorite Tools</h2>
+      <p>
+        Plugins like <strong>List Shifter</strong> and <strong>Bdk Utilities</strong> are invaluable for handling large datasets. Monitoring with Bubble’s logs and Chrome DevTools is essential for spotting slow interactions.
+      </p>
+      <p>
+        Ready to take your Bubble app to the next level? <a href="/contact" class="text-blue-600 underline">Let’s talk performance.</a>
+      </p>
+    </section>
+  </article>
+</BaseLayout>
