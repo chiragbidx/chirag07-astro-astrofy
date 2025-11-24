@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
-import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug"
 
 const posts = [
@@ -63,27 +62,27 @@ const posts = [
   </div>
 
   <HorizontalCard
-    title="Freelancely"
-    img="/images/freelancely.webp"
-    desc="A freelancer marketplace platform enabling clients to hire vetted professionals, manage contracts, and track workflows—all built on Bubble for rapid development and scalability."
-    url="https://freelancely.bubbleapps.io/"
-    badge="LIVE"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Startup CRM"
-    img="/images/startup-crm.webp"
-    desc="A fully featured CRM SaaS for startups to manage leads, sales pipelines, and automate outreach with real-time dashboards, automation, and team management—100% Bubble powered."
-    url="https://startupcrm.bubbleapps.io/"
+    title="ClientFlow CRM"
+    img="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
+    desc="A modern CRM platform designed for agencies and consultants to easily track leads, automate workflows, and manage client relationships in one place."
+    url="#"
     badge="SAAS"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="EventPilot"
-    img="/images/eventpilot.webp"
-    desc="An event management and ticketing platform allowing organizers to create events, sell tickets, manage attendees, and integrate with payment gateways. Used by 500+ events."
-    url="https://eventpilot.bubbleapps.io/"
-    badge="FOSS"
+    title="MarketNest Marketplace"
+    img="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+    desc="A double-sided B2B marketplace empowering suppliers and businesses to connect, negotiate, and do business efficiently through an intuitive online portal."
+    url="#"
+    badge="LIVE"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Insightlytics Dashboard"
+    img="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
+    desc="A real-time analytics dashboard built for SaaS companies—track KPIs, visualize customer behavior, and generate interactive reports with ease."
+    url="#"
+    badge="ANALYTICS"
   />
 
   <div>
