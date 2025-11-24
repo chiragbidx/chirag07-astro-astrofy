@@ -4,9 +4,38 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug"
 
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
-const last_posts = posts.slice(0, 3);
+const posts = [
+  {
+    data: {
+      title: "How I Built a SaaS MVP in 10 Days with Bubble",
+      heroImage: "/images/blog-saas-mvp.webp",
+      description:
+        "A step-by-step guide to scoping, designing, and launching a minimum viable product using Bubble’s powerful visual builder.",
+      badge: "Tutorial"
+    },
+    slug: "build-saas-mvp-bubble"
+  },
+  {
+    data: {
+      title: "Scaling Your Bubble App: Performance Optimizations that Work",
+      heroImage: "/images/blog-bubble-scale.webp",
+      description:
+        "Tips, tricks, and real-world strategies for ensuring your Bubble app stays fast and reliable—even as your user base grows.",
+      badge: "Best Practice"
+    },
+    slug: "scaling-performance-bubble"
+  },
+  {
+    data: {
+      title: "Integrating Stripe Payments in Bubble Without Plugins",
+      heroImage: "/images/blog-stripe-integration.webp",
+      description:
+        "A walkthrough for connecting Stripe directly in your Bubble app with custom API workflows and secure payment flows.",
+      badge: "Integration"
+    },
+    slug: "stripe-payments-bubble"
+  }
+]
 ---
 
 <BaseLayout sideBarActiveItemID="home">
@@ -62,7 +91,7 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   {
-    last_posts.map((post) => (
+    posts.map((post) => (
       <>
         <HorizontalCard
           title={post.data.title}
